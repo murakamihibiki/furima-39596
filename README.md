@@ -14,7 +14,7 @@
 | date of birth      | date   | null:false                           |
 
  - has many :item
- - has many :purchase record
+ - has many :order
  
   # item テーブル
 
