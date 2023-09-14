@@ -1,13 +1,13 @@
 <mxfile host="65bd71144e">
     <diagram id="kIYCg4qn53BQPxz0IwX7" name="ページ1">
-        <mxGraphModel dx="1164" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1136" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="66" value="user" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=1;curveFitting=1;jiggle=2;fontFamily=Helvetica;" vertex="1" parent="1">
                     <mxGeometry x="10" y="40" width="160" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="67" value="name&#10;email&#10;nickname&#10;password&#10;first name&#10;last name&#10;first name_kana&#10;last name_kana&#10;date of birth  &#10;" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Helvetica;" vertex="1" parent="66">
+                <mxCell id="67" value="name&#10;email&#10;nickname&#10;password&#10;first name&#10;last name&#10;first name_kana&#10;last name_kana&#10;date of birth  &#10;" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Verdana;" vertex="1" parent="66">
                     <mxGeometry y="40" width="160" height="150" as="geometry"/>
                 </mxCell>
                 <mxCell id="68" value="item" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=1;curveFitting=1;jiggle=2;fontFamily=Helvetica;" vertex="1" parent="1">
