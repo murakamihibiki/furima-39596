@@ -1,22 +1,22 @@
 <mxfile host="65bd71144e">
     <diagram id="kIYCg4qn53BQPxz0IwX7" name="ページ1">
-        <mxGraphModel dx="1575" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1377" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="81" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;entryX=0;entryY=0.333;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="66" target="70">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="66" value="user" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="66" value="user" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
                     <mxGeometry y="30" width="160" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="67" value="name&#10;email&#10;nickname&#10;password&#10;address&#10;date of birth  &#10;" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="66">
+                <mxCell id="67" value="name&#10;email&#10;nickname&#10;password&#10;address&#10;date of birth  &#10;" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="66">
                     <mxGeometry y="50" width="160" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="68" value="item" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="68" value="item" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
                     <mxGeometry x="390" y="30" width="160" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="70" value="itemname&#10;image&#10;explanation&#10;Category&#10;situation&#10;Shipping address&#10;Shipping days&#10;price&#10;Shipping fee burden&#10;Product inventory" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontStyle=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="68">
+                <mxCell id="70" value="itemname&#10;image&#10;explanation&#10;Category&#10;situation&#10;Shipping address&#10;Shipping days&#10;price&#10;Shipping fee burden&#10;Product inventory" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontStyle=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="68">
                     <mxGeometry y="30" width="160" height="150" as="geometry"/>
                 </mxCell>
                 <mxCell id="76" value="purchase record" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
@@ -48,6 +48,22 @@
                         <mxPoint x="80" y="280" as="sourcePoint"/>
                         <mxPoint x="330" y="240" as="targetPoint"/>
                         <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Helvetica;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="77">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="250" y="340" as="sourcePoint"/>
+                        <mxPoint x="380" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="89" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Helvetica;curved=1;exitX=1.031;exitY=0.882;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="67">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="250" y="340" as="sourcePoint"/>
+                        <mxPoint x="390" y="390" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="165" y="280"/>
+                            <mxPoint x="390" y="280"/>
+                        </Array>
                     </mxGeometry>
                 </mxCell>
             </root>
