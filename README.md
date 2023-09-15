@@ -54,6 +54,6 @@
 | town               | string       | null:false                           |
 | street address     | string       | null:false                           |
 | building           | string       |                                      |
-| phone_number       | string       | null:false                           |
+| phone_number       | string       | null:false                        |
 
 - belong_to :order
