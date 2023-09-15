@@ -53,7 +53,7 @@
 | prefecture_id      | integer      | null:false                           |
 | town               | string       | null:false                           |
 | street address     | string       | null:false                           |
-| building           | string       |                                      |
+| building           | string       |                                   |
 | phone_number       | string       | null:false                           |
 
 - belong_to :order
