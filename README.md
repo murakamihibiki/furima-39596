@@ -13,14 +13,14 @@
 | first_name_kana    | string | null:false                           |
 | date_of_birth      | date   | null:false                           |
 
- - has many :items
- - has many :orders
+ - has_many :items
+ - has_many :orders
  
   # items テーブル
 
 | column             | Type    | Options                              |
 | ------------------ | ------  | ------------------------------------ |
-| user               | string  | null:false  foreign_key: true        |
+| user               | references | null:false  foreign_key: true        |
 | name               | string  | null:false                           |
 | description        | text    | null:false                           |
 | category_id        | integer    | null:false                           |
@@ -28,9 +28,9 @@
 | shipping_cost_id   | integer    | null:false                           |
 | prefecture_id      | integer    | nill:false                           |
 | shipping_date_id   | integer    | null:false                           |
-| prise              |  | null:false                           |
+| prise              | integer  | null:false                           |
 
-- has one :orders
+- has＿one :order
 - belong_to :user
 
 # orders テーブル
@@ -42,7 +42,7 @@
 
 - belong_to :user
 - belong_to :item
-- has_one :payments
+- has_one :payment
 
 # payments テーブル
 
