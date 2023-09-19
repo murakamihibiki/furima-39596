@@ -1,39 +1,39 @@
 # README
 
-# user テーブル
+# users テーブル
 
 | Column             | Type   | Options                              |
 | ------------------ | ------ | ------------------------------------ |
-| nickname           | string | null:false unique constraint: true   |
-| email              | string | null:false unique constraint: true   |
-| encrypted_password | string | null:false unique constraint: true   |
-| last name          | string | null:false                           |
-| first name         | string | null:false                           |
-| last name_kana     | string | null:false                           |
-| first name_kana    | string | null:false                           |
-| date of birth      | date   | null:false                           |
+| nickname           | string | null:false    |
+| email              | string | null:false unique:true   |
+| encrypted_password | string | null:false    |
+| last_name          | string | null:false                           |
+| first_name         | string | null:false                           |
+| last_name_kana     | string | null:false                           |
+| first_name_kana    | string | null:false                           |
+| date_of_birth      | date   | null:false                           |
 
- - has many :item
- - has many :order
+ - has many :items
+ - has many :orders
  
-  # item テーブル
+  # items テーブル
 
 | column             | Type    | Options                              |
 | ------------------ | ------  | ------------------------------------ |
 | user               | string  | null:false  foreign_key: true        |
 | name               | string  | null:false                           |
 | description        | text    | null:false                           |
-| category_id        | date    | null:false                           |
-| item_status_id     | date    | null:false                           |
-| shipping_cost_id   | date    | null:false                           |
-| prefecture_id      | date    | nill:false                           |
-| shipping_date_id   | date    | null:false                           |
-| prise              | integer | null:false                           |
+| category_id        | integer    | null:false                           |
+| item_status_id     | integer    | null:false                           |
+| shipping_cost_id   | integer    | null:false                           |
+| prefecture_id      | integer    | nill:false                           |
+| shipping_date_id   | integer    | null:false                           |
+| prise              |  | null:false                           |
 
-- has one :order
+- has one :orders
 - belong_to :user
 
-# order テーブル
+# orders テーブル
 
 | column             | Type        | Options                              |
 | ------------------ | ----------- | ------------------------------------ |
@@ -42,13 +42,13 @@
 
 - belong_to :user
 - belong_to :item
-- has_one :payment
+- has_one :payments
 
-# payment テーブル
+# payments テーブル
 
 | column             | Type         | Options                              |
 | ------------------ | ------------ | ------------------------------------ |
-| orders             | references   | null:false foreign_key: true         |
+| order             | references   | null:false foreign_key: true         |
 | postcode           | string       | null:false                           |
 | prefecture_id      | integer      | null:false                           |
 | town               | string       | null:false                           |
