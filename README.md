@@ -28,9 +28,9 @@
 | shipping_cost_id   | integer    | null:false                           |
 | prefecture_id      | integer    | null:false                           |
 | shipping_date_id   | integer    | null:false                           |
-| prise              | integer  | null:false                           |
+|      cost         | integer  | null:false                           |
 
-- has＿one :order
+- has_one :order
 - belongs_to :user
 
 # orders テーブル
