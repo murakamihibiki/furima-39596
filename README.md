@@ -26,12 +26,12 @@
 | category_id        | integer    | null:false                           |
 | item_status_id     | integer    | null:false                           |
 | shipping_cost_id   | integer    | null:false                           |
-| prefecture_id      | integer    | nill:false                           |
+| prefecture_id      | integer    | null:false                           |
 | shipping_date_id   | integer    | null:false                           |
 | prise              | integer  | null:false                           |
 
 - has＿one :order
-- belong_to :user
+- belongs_to :user
 
 # orders テーブル
 
@@ -40,8 +40,8 @@
 | user               | references  | null:false foreign_key: true         |
 | item               | references  | null:false foreign_key: true         |
 
-- belong_to :user
-- belong_to :item
+- belongs_to :user
+- belongs_to :item
 - has_one :payment
 
 # payments テーブル
@@ -52,8 +52,8 @@
 | postcode           | string       | null:false                           |
 | prefecture_id      | integer      | null:false                           |
 | town               | string       | null:false                           |
-| street address     | string       | null:false                           |
+| street_address     | string       | null:false                           |
 | building           | string       |                                      |
 | phone_number       | string       | null:false                        |
 
-- belong_to :order
+- belongs_to :order
