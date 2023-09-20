@@ -1,4 +1,4 @@
- MySQL. Versions 5.5.8 and up are supported.
+# MySQL. Versions 5.5.8 and up are supported.
 #
 # Install the MySQL driver
 #   gem install mysql2
@@ -19,23 +19,13 @@ default: &default
 
 development:
   <<: *default
-  adapter: mysql2
-  username: root
-  password:
-  host: localhost
-  database: furima_39596_development
-
+  database: FURIMA_39604_development
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  adapter: mysql2
-  username: root
-  password:
-  host: localhost
-  database: furima_39596_test
-
+  database: FURIMA_39604_test
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -58,8 +48,6 @@ test:
 #
 production:
   <<: *default
-  adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %>
-  database: furima_39596_production
-  username: furima_39596
-  password: <%= ENV["FURIMA_39596_DATABASE_PASSWORD"] %>
+  database: FURIMA_39604_production
+  username: FURIMA_39604
+  password: <%= ENV["FURIMA_39604_DATABASE_PASSWORD"] %>
