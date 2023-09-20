@@ -7,14 +7,14 @@
 | nickname           | string | null:false unique constraint: true   |
 | email              | string | null:false unique constraint: true   |
 | encrypted_password | string | null:false unique constraint: true   |
-| last name          | string | null:false                           |
-| first name         | string | null:false                           |
-| last name_kana     | string | null:false                           |
-| first name_kana    | string | null:false                           |
-| date of birth      | date   | null:false                           |
+| last_name          | string | null:false                           |
+| first_name         | string | null:false                           |
+| last_name_kana     | string | null:false                           |
+| first_name_kana    | string | null:false                           |
+| birth_date     | date   | null:false                           |
 
- - has many :item
- - has many :order
+ - has_many :item
+ - has_many :order
  
   # item テーブル
 
@@ -30,7 +30,7 @@
 | shipping_date_id   | date    | null:false                           |
 | prise              | integer | null:false                           |
 
-- has one :order
+- has_one :order
 - belong_to :user
 
 # order テーブル
