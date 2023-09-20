@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :basic_auth
+  before_action :confiqure permitted parameters, if: :devise_controller?
 
   private
 
