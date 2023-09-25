@@ -14,7 +14,7 @@ RSpec.describe User, type: :model do
 
     context '異常形' do
       it 'ニックネームが空では登録できない' do
-        @user.nick_name = ''
+        @user.nickname = ''
         @user.valid?
         expect(@user.errors.full_messages).to include("Nick name can't be blank")
       end
@@ -105,7 +105,7 @@ RSpec.describe User, type: :model do
         expect(@user.errors.full_messages).to include("First name kana is invalid. Input full-width katakana characters")
       end
       it '生年月日が空では登録できない' do
-        @user.birthday = ''
+        @user.birth_date = ''
         @user.valid?
         expect(@user.errors.full_messages).to include("Birthday date can't be blank")
       end
