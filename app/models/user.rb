@@ -3,6 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+3-データベース設計
 
   validates :nickname,  presence: true
   validates :birth_date, presence: { message: "date can't be blank" }
