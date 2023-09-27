@@ -1,17 +1,32 @@
- default: &default
+# MySQL. Versions 5.5.8 and up are supported.
+#
+# Install the MySQL driver
+#   gem install mysql2
+#
+# Ensure the MySQL gem is defined in your Gemfile
+#   gem "mysql2"
+#
+# And be sure to use new-style password hashing:
+#   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
+#
+default: &default
+  adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
-development:
-  <<: *default
-  adapter: mysql2
   username: root
-  password: 2233
+　　　　password: 2233
   host: localhost
   database: hurima-39604_development
 
+development:
+  <<: *default
+  database: FURIMA_39604_development
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
 test:
   <<: *default
+
   adapter: mysql2
   username: root
   password: 2233
@@ -20,5 +35,6 @@ test:
 
 production:
   <<: *default
-  adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %>
+  database: FURIMA_39604_production
+  username: FURIMA_39604
+  password: <%= ENV["FURIMA_39604_DATABASE_PASSWORD"] %>
