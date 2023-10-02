@@ -3,10 +3,10 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-3-データベース設計
+
 
   validates :nick_name,  presence: true
-  validates :birthday, presence: { message: "date can't be blank" }
+  validates :date_of_birth, presence: { message: "date can't be blank" }
 
   PASSWORD_REGEX = /\A(?=.*?[a-zA-Z])(?=.*?\d)[A-Za-z0-9]+\z/.freeze
   validates_format_of :password, with: PASSWORD_REGEX, message: 'is invalid. Include both letters and numbers' 

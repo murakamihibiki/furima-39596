@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-　　　　password: 2233
+  password: 2233
   host: localhost
   database: hurima-39604_development
 
