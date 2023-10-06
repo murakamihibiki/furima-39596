@@ -2,9 +2,9 @@ class ItemsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :destroy, :edit]
   before_action :set_item, only: [:show, :edit, :update, :destroy] 
 
-  #def index
-    #@items = Item.order("created_at DESC")
-  #end
+  def index
+    @items = Item.order("created_at DESC")
+  end
 
   def show
     #@purchase_records = PurchaseRecord.where(item_id: @item.id)
@@ -34,7 +34,7 @@ class ItemsController < ApplicationController
     #redirect_to action: :index
     #else
       render :edit
-    end
+    #end
   end
 
   def update
