@@ -42,7 +42,7 @@ class ItemsController < ApplicationController
       #redirect_to item_path
     #else
       #render :edit, status: :unprocessable_entity
-    end
+    #end
   end
 
   def destroy
@@ -64,4 +64,4 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
   end
 
-end
+#end
