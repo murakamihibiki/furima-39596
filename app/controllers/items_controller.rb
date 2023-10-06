@@ -16,14 +16,19 @@ class ItemsController < ApplicationController
   end
 
   def create
+    # アイテムを作成するための他のコード
+  
     @item = Item.new(item_params)
+  
     if @item.save
+      # アイテムが正常に作成されました
       redirect_to root_path
     else
+      # バリデーションまたはその他のエラーを処理する
       render :new, status: :unprocessable_entity
     end
   end
-
+  
   def edit
     @purchase_records = PurchaseRecord.where(item_id: @item.id)
     if current_user != @item.user || (@purchase_records.present? && @purchase_records.pluck(:item_id).include?(@item.id))
