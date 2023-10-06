@@ -79,8 +79,9 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Price is out of setting range")
       end
       it 'ユーザーが紐付いていないと保存できない' do
-        item = FactoryBot.build(:item, user: nil)
-        expect(item).to_not be_valid
+        @item.user = nil
+        @item.valid?
+        expect(@item.errors.full_messages).to include("User must exist")
       end
     end
     
