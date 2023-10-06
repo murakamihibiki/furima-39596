@@ -4,8 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :nick_name,  presence: true
-  validates :birthday, presence: { message: "date can't be blank" }
+
+  validates :nickname,  presence: true
+  validates :birth_date, presence: { message: "date can't be blank" }
 
   PASSWORD_REGEX = /\A(?=.*?[a-zA-Z])(?=.*?\d)[A-Za-z0-9]+\z/.freeze
   validates_format_of :password, with: PASSWORD_REGEX, message: 'is invalid. Include both letters and numbers' 
