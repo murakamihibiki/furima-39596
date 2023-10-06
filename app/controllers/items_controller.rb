@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.order("created_at DESC")
-    @purchase_records = PurchaseRecord.where(item_id: @items.pluck(:id))
+    
   end
 
   def show
