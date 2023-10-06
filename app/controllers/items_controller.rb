@@ -7,7 +7,7 @@ class ItemsController < ApplicationController
   end
 
   def show
-    #@purchase_records = PurchaseRecord.where(item_id: @item.id)
+    @item = Item.find(params[:id])
   end
 
   def new
