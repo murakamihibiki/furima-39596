@@ -29,20 +29,19 @@ class ItemsController < ApplicationController
   end
   
   def edit
-    #@purchase_records = PurchaseRecord.where(item_id: @item.id)
-    #if current_user != @item.user || (@purchase_records.present? && @purchase_records.pluck(:item_id).include?(@item.id))
-    #redirect_to action: :index
-    #else
-      render :edit
-    #end
+    @item = Item.find(params[:id])
+
+    unless user_signed_in? && current_user == @item.user
+      redirect_to action: :index
+    end
   end
 
   def update
-    #if @item.update(item_params)
-      #redirect_to item_path
-    #else
-      #render :edit, status: :unprocessable_entity
-    #end
+    if @item.update(item_params)
+      redirect_to item_path
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy
