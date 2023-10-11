@@ -4,11 +4,11 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.order('created_at DESC')
-    #@purchase_records = PurchaseRecord.where(item_id: @items.pluck(:id))
+    @purchase_records = PurchaseRecord.where(item_id: @items.pluck(:id))
   end
 
   def show
-    #@purchase_records = PurchaseRecord.where(item_id: @item.id)
+    @purchase_records = PurchaseRecord.where(item_id: @item.id)
   end
 
   def new
@@ -41,14 +41,14 @@ class ItemsController < ApplicationController
     end
   end
 
-  def destroy
-    if current_user == @item.user
-      @item.destroy
-    else
-      redirect_to item_path
-    end
-    redirect_to action: :index
-  end
+  # def destroy
+  #   if current_user == @item.user
+  #     @item.destroy
+  #   else
+  #     redirect_to item_path
+  #   end
+  #   redirect_to action: :index
+  # end
 
   private
 
