@@ -1,14 +1,14 @@
 class ItemsController < ApplicationController
-  # before_action :authenticate_user!, only: [:new, :destroy, :edit]
-  # before_action :set_item, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :destroy, :edit]
+  before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   def index
     @items = Item.order('created_at DESC')
-    @purchase_records = PurchaseRecord.where(item_id: @items.pluck(:id))
+  #@purchase_records = PurchaseRecord.where(item_id: @items.pluck(:id))
   end
 
   def show
-    @purchase_records = PurchaseRecord.where(item_id: @item.id)
+    #@purchase_records = PurchaseRecord.where(item_id: @item.id)
   end
 
   def new
