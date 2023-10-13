@@ -12,7 +12,7 @@ class PurchaseRecordAddress
     validates :telephone_number, length: { in: 10..11 }, numericality: { only_integer: true }
     validates :item_id
     validates :user_id
-    validates :token
+    validates :token, presence: true
   end
 
   def save
