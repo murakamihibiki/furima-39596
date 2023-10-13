@@ -25,7 +25,7 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    #@purchase_records = PurchaseRecord.where(item_id: @item.id)
+    @purchase_records = PurchaseRecord.where(item_id: @item.id)
     if current_user != @item.user || (@purchase_records.present? && @purchase_records.pluck(:item_id).include?(@item.id))
       redirect_to action: :index
     else
