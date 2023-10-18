@@ -4,11 +4,11 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.order('created_at DESC')
-  #@purchase_records = PurchaseRecord.where(item_id: @items.pluck(:id))
+    @purchase_records = PurchaseRecord.where(item_id: @items.pluck(:id))
   end
 
   def show
-    #@purchase_records = PurchaseRecord.where(item_id: @item.id)
+    @purchase_records = PurchaseRecord.where(item_id: @item.id)
   end
 
   def new
@@ -25,7 +25,7 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    #@purchase_records = PurchaseRecord.where(item_id: @item.id)
+    @purchase_records = PurchaseRecord.where(item_id: @item.id)
     if current_user != @item.user || (@purchase_records.present? && @purchase_records.pluck(:item_id).include?(@item.id))
       redirect_to action: :index
     else
