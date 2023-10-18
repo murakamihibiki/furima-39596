@@ -5,7 +5,6 @@ class OrdersController < ApplicationController
   def index
     gon.public_key = ENV['PAYJP_PUBLIC_KEY']
     @purchase_record_address = PurchaseRecordAddress.new
-    @item = Item.find(params[:item_id])
 
     @purchase_records = PurchaseRecord.where(item_id: @item.id)
     if current_user == @item.user
